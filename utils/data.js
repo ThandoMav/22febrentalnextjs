@@ -232,10 +232,9 @@ export const header = {
 
 export const nav = [
   { name: 'Home', href: '/' },
-  { name: 'About', href: '/about-me' },
+  { name: 'About', href: '/about-us' },
   { name: 'Renting & Buying', href: '/search-rentals' },
-  { name: 'Home Services', href: '/search-home-services' },
-  { name: 'Work With Us', href: '/appointment' },
+  { name: 'Work With Us', href: '/appointmentplace' },
   { name: 'Shop', href: '/search' },
   { name: 'Blog', href: '/search-posts' },
   { name: 'Contact', href: '/contact' },

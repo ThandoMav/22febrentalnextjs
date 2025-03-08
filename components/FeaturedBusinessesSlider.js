@@ -15,7 +15,7 @@ import 'swiper/css/autoplay';
 // import required modules
 import { Navigation, Autoplay } from 'swiper';
 
-const FeaturedBusinessesSlider = ({buses}) => {
+const FeaturedBusinessesSlider = ({rentals}) => {
   // destructure data
   //const { programs } = workoutsPosts;
   return (
@@ -39,7 +39,7 @@ const FeaturedBusinessesSlider = ({buses}) => {
       modules={[Autoplay, Navigation]}
       className="workoutSlider"
     >
-      {buses.map((program, idx) => {
+      {rentals.map((program, idx) => {
         // destructure program
         const { image1, name, slug, category, city } = program;
         return (
@@ -47,7 +47,7 @@ const FeaturedBusinessesSlider = ({buses}) => {
             className="max-w-[320px] max-h-[320px] relative"
             key={idx}
           >
-            <Link href={`/home-service/${slug}`}>
+            <Link href={`/rental/${slug}`}>
               <div
                 className="w-full max-w-[368px] px-[18px] pb-[26px] lg:px-[28px] lg:pb-[38px] bg-white hover:shadow-primary flex flex-col rounded-[14px] mx-auto transition"
                 data-aos="fade-up"
@@ -79,7 +79,7 @@ const FeaturedBusinessesSlider = ({buses}) => {
                     <BsStarFill />
                     <BsStarHalf />
                   </div>
-                  <Link className="font-medium" href={`/home-service/${slug}`}>
+                  <Link className="font-medium" href={`/rental/${slug}`}>
                     Visit
                   </Link>
                 </div>
